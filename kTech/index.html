@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>kTech Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+    <!--start left side navbar-->
+    <div class="container-fluid">
+        <div class="row g-0">
+            <div class="col-md-3 col-lg-3 col-sm-12">
+                <div class="left-side">
+                    <div class="left-side-navbar">
+                        <ul>
+                            <li class="navbar-logo">
+                                <a href="#">
+                                    <img src="data:image/jpeg;base64,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" alt="Logo">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span><i class="fas fa-tachometer-alt"></i></span>dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><span><i class="fas fa-folder"></i></span>projects</a>
+                            </li>
+                            <li class="active">
+                                <a href="#"><span><i class="fas fa-tasks"></i></span>tasks</a>
+                            </li>
+                            <li>
+                                <a href="#"><span><i class="far fa-calendar-alt"></i></span>calender</a>
+                            </li>
+                        </ul>
+                        <ul class="logout">
+                            <li>
+                                <a href="#"><span><i class="fas fa-arrow-left"></i></span>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--end left side navbar-->
+            <!--start right side section-->
+            <div class="col-md-9 col-lg-9 col-sm-12">
+                <!--header-->
+                <div class=" row header g-0">
+                    <div class="col-md-10 col-lg-10 col-sm-12">
+                        <div class="header-search">
+                            <input type="text" placeholder="Search...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-sm-2">
+                        <div class="header-user">
+                            <span>
+                                <i class="fas fa-bell"></i>
+                                <span class="active"></span>
+                            </span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" />
+                        </div>
+                    </div>
+                </div>
+                <!--end header-->
+                <!--start addtask section-->
+                <div class="add-task-section">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-4">
+                            <div class="add-task-left">
+                                <h2>Tasks</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-8 col-sm-8">
+                            <div class="add-task-right">
+                                <input type="text" id="taskInput" placeholder="Enter task">
+                                <button onclick="addTask()" class="btn btn-primary">Add</button>
+
+                                <ul id="taskList"></ul>
+                                <div class="add-task-right-icon">
+                                    <span><a href="#"><i class="fas fa-arrow-left"></i></a></span>
+                                    <span><a href="#"><i class="fas fa-arrow-right"></i></a></span>
+                                    <span><a href="#"><i class="far fa-user"></i></a></span>
+                                    <span><a href="#"><i class="fas fa-tasks"></i></a></span>
+                                </div>
+                                <div class="add-task-right-btn">
+                                    <button class="btn btn-primary">New task +</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end addtask section-->
+                <!--start task card-->
+                <div class="task-card">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-4">
+                            <div class="task-card-inner">
+                                <div class="task-card-title">
+                                    <h2>To do</h2>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span>
+                                                <i class="fas fa-pencil-alt"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fas fa-trash"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-4 active">
+                            <div class="task-card-inner">
+                                <div class="task-card-title">
+                                    <h2>In progress</h2>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-4 active">
+                            <div class="task-card-inner">
+                                <div class="task-card-title">
+                                    <h2>Done</h2>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i>  </span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="task-card-box">
+                                    <div class="task-card-box-item">
+                                        <span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9zilY2Yu2hc19pDZFxgWDTUDy5DId7ITqA&s" alt="user" /></span>
+                                        <p>
+                                            <span><i class="fas fa-pencil-alt"></i></span>
+                                            <span><i class="fas fa-trash"></i></span>
+                                        </p>
+                                    </div>
+                                    <div class="task-card-box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end task card-->
+            </div>
+            <!--  end right side section-->
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
